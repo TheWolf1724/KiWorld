@@ -1,0 +1,19 @@
+# --- Godot 4+ ---
+# Cache del editor e importaciones (se regenera al abrir el proyecto)
+.godot/
+
+# --- Builds / exportaciones ---
+/build/
+/export/
+*.pck
+*.zip
+*.exe
+*.apk
+*.aab
+
+# --- Sistema / editores ---
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+*~

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/entities/Enemy.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://scripts/components/HealthComponent.gd" id="2_health"]
+
+[sub_resource type="CircleShape2D" id="shape_enemy"]
+radius = 8.0
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_enemy")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("shape_enemy")
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("2_health")

@@ -1,0 +1,10 @@
+# Normaliza finales de linea a LF en el repo
+* text=auto eol=lf
+
+# Tratar como binarios (sin diff de texto)
+*.png binary
+*.svg binary
+*.webp binary
+*.ttf binary
+*.wav binary
+*.ogg binary

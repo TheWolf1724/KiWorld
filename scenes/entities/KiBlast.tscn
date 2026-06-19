@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/entities/KiBlast.gd" id="1_ki"]
+
+[sub_resource type="CircleShape2D" id="shape_ki"]
+radius = 5.0
+
+[node name="KiBlast" type="Area2D"]
+script = ExtResource("1_ki")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("shape_ki")
